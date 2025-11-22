@@ -1,0 +1,20 @@
+:root{
+    --backround-primary: #415D43;
+    --backround-secondary: #9DB17C;
+    --backround-tertiary: #86BBD8;
+    --backround-additional: #FF7F11;
+}
+
+.green {
+    background-color: var(--backround-primary);
+}
+
+.hover_green a:hover {
+    background-color: var(--backround-additional);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main {
+    background-color: var(--backround-secondary);
+}
