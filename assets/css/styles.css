@@ -9,7 +9,7 @@
     background-color: var(--backround-primary);
 }
 
-.hover_green a:hover {
+ul a:hover {
     background-color: var(--backround-additional);
     padding: 5px;
     border-radius: 5px;
@@ -17,4 +17,9 @@
 
 main {
     background-color: var(--backround-secondary);
+}
+
+div a:hover {
+    background-color: var(--backround-tertiary);
+    border-radius: 10px;
 }
