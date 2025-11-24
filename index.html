@@ -16,17 +16,32 @@
     <img src="https://placehold.co/64?text=logo" alt="Logo">
     <h1 class="grow pl-4">Certificate IV in IT (Programming) <br>FINAL PROJECT</h1>
     <nav class="pt-8">
+        <div class="group relative dropdown">
+            <img src="./assets/img/hamburger.png"
+                 alt="Menu"
+                 class="hamburger transition duration-500 ease-in-out pb-2"/>
+            <section class="group-hover:block dropdown-menu absolute right-1  hidden h-auto transition duration-500 ease-in-out">
+                <ul class="hamburger_nav top-0 w-24 shadow px-2 py-4 gap-1 text-end rounded-b-lg">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resumé</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mywork.html">My work</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+        </div>
         <ul class="top_nav flex flex-row gap-4 w-full">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resumé</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="mywork.html">My work</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class="border border-t-0 border-x-0" href="index.html">Home</a></li>
+            <li><a class="border border-t-0 border-x-0" href="resume.html">Resumé</a></li>
+            <li><a class="border border-t-0 border-x-0" href="about.html">About</a></li>
+            <li><a class="border border-t-0 border-x-0" href="mywork.html">My work</a></li>
+            <li><a class="border border-t-0 border-x-0" href="projects.html">Projects</a></li>
+            <li><a class="border border-t-0 border-x-0" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-<main class="w-4/5 mx-auto pb-8">
+<main class="w-4/5 mx-auto pb-8 text-center">
     <section class="grid grid-cols-6 grid-rows-4">
         <section class="col-start-3 col-span-2 row-start-1 p-2">
             <a class="w-full p-4 block border border-black rounded-lg" href="about.html">

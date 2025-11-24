@@ -9,6 +9,14 @@
     background-color: var(--backround-primary);
 }
 
+.hamburger{
+    width: 50px;
+    height: 50px;
+}
+
+.hamburger_nav {
+    background-color: var(--backround-primary);
+}
 
 
 .top_nav {
@@ -28,7 +36,7 @@
     background-color: var(--backround-primary);
 }
 
-ul a:hover {
+ul a:hover, .hamburger_nav a:hover {
     background-color: var(--backround-additional);
     padding: 5px;
     border-radius: 5px;
@@ -89,6 +97,9 @@ width: 15px;
         display: flex;
     }
 
+    .hamburger {
+        display: none;
+    }
     .language_list {
         flex-direction: row;
     }
