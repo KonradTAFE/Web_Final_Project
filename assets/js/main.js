@@ -13,8 +13,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     let isValid = true;
 
     // Validate Name
+    let nameRegex = /^[a-z ,.'-]+$/i;
     if (name === '' || name.length < 3) {
         document.getElementById('nameError').textContent = 'Name is required';
+        isValid = false;
+    } else if (!nameRegex.test(name)) {
+        document.getElementById('nameError').textContent = 'Valid name is required';
         isValid = false;
     }
 
@@ -29,8 +33,15 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
 
     // Validate Message
+    let messageRegex = /^[a-zA-Z0-9.,?!\\s-]/;
     if (message === '') {
         document.getElementById('messageError').textContent = 'Message cannot be empty';
+        isValid = false;
+    } else if (!messageRegex.test(message)) {
+        document.getElementById('messageError').textContent = 'Message cannot contain special characters';
+        isValid = false;
+    } else if (message.length < 10 || message.length > 300) {
+        document.getElementById('messageError').textContent = 'Message cannot be shorter than 10 or longer than 300 characters';
         isValid = false;
     }
 
