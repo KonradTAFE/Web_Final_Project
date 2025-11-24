@@ -5,6 +5,25 @@
     --backround-additional: #FF7F11;
 }
 
+.project_title {
+    background-color: var(--backround-primary);
+}
+
+
+
+.top_nav {
+    display: none;
+}
+
+.language_list {
+    flex-direction: row;
+}
+
+.resume_page {
+    display: flex;
+    flex-direction: column;
+}
+
 .green {
     background-color: var(--backround-primary);
 }
@@ -19,7 +38,7 @@ main {
     background-color: var(--backround-secondary);
 }
 
-div a:hover {
+section a:hover {
     background-color: var(--backround-tertiary);
     border-radius: 10px;
 }
@@ -63,4 +82,21 @@ label {
 .arrow {
 width: 15px;
     height: 15px;
+}
+
+@media (min-width: 1024px) {
+    .top_nav {
+        display: flex;
+    }
+
+    .language_list {
+        flex-direction: row;
+    }
+
+    .resume_page {
+        display: grid;
+        /*grid grid-cols-3 gap-2*/
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
 }
